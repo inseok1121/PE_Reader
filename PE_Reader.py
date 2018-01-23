@@ -74,10 +74,6 @@ class MyWindow(QWidget):
         column_headers = ['Name', 'Path']
         self.tableWidget.setHorizontalHeaderLabels(column_headers)
 
-    def setExifTableData(self):
-        column_headers = ['Key', 'Values']
-        self.exifTable.setHorizontalHeaderLabels(column_headers)
-
     def pushButtonClicked(self):
         files = QFileDialog.getOpenFileNames(self);
         for fname in files[0]:
